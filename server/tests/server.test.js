@@ -280,9 +280,6 @@ describe('POST /users/login', () => {
   });
 
   it('should reject invalid login', (done) => {
-    //400
-    //x-auth not exist
-    //user.tokens length 0
     request(app)
       .post('/users/login')
       .send({
